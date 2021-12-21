@@ -47,13 +47,14 @@ export default defineComponent({
         return ''
       }
     }
+    const isRow = direction === 'row'
 
     return (
       <div
         class={[
           'devui-radio-group',
           {
-            'is-row': direction === 'row',
+            'is-row': isRow,
             'is-column': direction === 'column'
           }
         ]}
